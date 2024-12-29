@@ -3,7 +3,7 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract Variable {
-    uint public myValue = 100;
+    uint public myValue = 100; //unsigned integer that means no negative integer
     // State Variables
     int256 public myInt = 1;
     uint256 public myUint256 = 1;
@@ -23,6 +23,7 @@ contract Variable {
 
     // local variable
     function getLocalNumber() public pure returns (uint){
+         // local variable number
         uint number = 10;
         return number;
     }
