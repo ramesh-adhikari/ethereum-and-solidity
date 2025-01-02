@@ -9,3 +9,7 @@ This repository contains examples and projects for learning Ethereum and Solidit
 3. **[3_project2](3_project2/)** - Project 2 details and implementation. -->
 
 Navigate to the subfolders to find more details in their respective `README.md` files.
+
+
+# Reference
+https://www.youtube.com/watch?v=jcgfQEbptdo&ab_channel=DappUniversity

@@ -20,13 +20,13 @@ contract RealEstate is ERC721URIStorage {
         _tokenIds.increment();
 
         uint256 newItemId = _tokenIds.current();
-        _mint(player, newItemId);
+        _mint(msg.sender, newItemId);
         _setTokenURI(newItemId, tokenURI);
 
         return newItemId;
     }
 
-    function totalSupply() public view returns (unit256) {
+    function totalSupply() public view returns (uint256) {
         return _tokenIds.current(); //return currently maintained nft
     }
 
