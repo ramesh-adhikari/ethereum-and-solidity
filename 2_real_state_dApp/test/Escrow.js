@@ -11,7 +11,7 @@ describe('Escrow', () => {
 
     beforeEach(async () => {
         // Setup accounts
-        [buyer, seller, inspector, lender] = await ethers.getSigners()
+        [buyer, seller, inspector, lender] = await ethers.getSigners() //this gives the array of address abd we get take four address for buyer, seller, inspector, lende
 
         // Deploy Real Estate
         const RealEstate = await ethers.getContractFactory('RealEstate')
