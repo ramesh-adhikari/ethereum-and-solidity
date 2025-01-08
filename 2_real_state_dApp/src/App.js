@@ -38,7 +38,7 @@ function App() {
       const metadata = await response.json()
       homes.push(metadata)
     }
-    console.log(homes)
+
     setHomes(homes)
 
     const escrow = new ethers.Contract(config[network.chainId].escrow.address, Escrow, provider)
@@ -92,9 +92,9 @@ function App() {
 
       </div>
 
-      {/* {toggle && (
+      {toggle && (
         <Home home={home} provider={provider} account={account} escrow={escrow} togglePop={togglePop} />
-      )} */}
+      )}
 
     </div>
   );
